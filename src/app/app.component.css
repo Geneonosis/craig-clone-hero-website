@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap");
+
+/* HEADER CONTENT */
+.header {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  color: red;
+  font-weight: 900;
+  text-align: center;
+  margin: 0px;
+}
+
+.header-container {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-logo {
+  margin: auto;
+  width: 300px;
+}
+
+/* HEADER - MEDIA QUERIES */
+@media screen and (max-width: 480px) {
+  .header-container{
+    margin-top: 1em;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+  .header{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+  }
+  .header-logo{
+  margin: auto;
+  width: 100px;
+  }
+}
+
+/* SEARCH TOOLS */
+
+input {
+  margin: 1em;
+  height: 40px;
+  width: 300px;
+  border: none;
+  border-radius: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.search-tools {
+  margin: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.search-tools button {
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #81edc5;
+  padding: 10px;
+  height: 40px;
+  border: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.search-tools button:hover {
+  background-color: #e61846;
+  transition: 0.5s;
+}
+
+/* SEARCH TOOLS MEDIA QUERIES */
+@media screen and (max-width: 480px) {
+  input {
+    margin: 0px;
+    height: 34px;
+    width: auto;
+    border: none;
+    border-radius: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-right: 3px;
+  }
+  
+  .search-tools {
+    margin-top: .5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: .5em;
+  }
+  
+  .search-tools button {
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #81edc5;
+    padding: 3px;
+    height: fit-content;
+    border: none;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  
+  .search-tools button:hover {
+    background-color: #e61846;
+    transition: 0.5s;
+  }
+}
+
+.example-form {
+  margin: auto;
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.table-contianer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 700px;
+  overflow-y: scroll;
+}
+
+table {
+  width: 100%;
+}
+
+/*TABLE MEDIA QUERIES */
+@media screen and (max-width: 480px) {
+  .table-contianer {
+    width: 100%;
+    margin-left: none;
+    margin-right: none;
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+}
